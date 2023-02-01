@@ -16,6 +16,10 @@ function HomeScreen() {
         isLargeRow
       />
       <Rows
+        title='Trending Now'
+        fetchUrl={requests.fetchTrending}
+      />
+      <Rows
         title='Top Rated'
         fetchUrl={requests.fetchTopRated}
       />
