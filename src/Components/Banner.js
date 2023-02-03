@@ -28,19 +28,19 @@ function Banner() {
     return (
         <header className='banner' style={{
             backgroundSize: "cover",
-            backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`,
+            backgroundImage: `url(https://image.tmdb.org/t/p/original//bKxiLRPVWe2nZXCzt6JPr5HNWYm.jpg)`,
             backgroundPosition: "center center"
         }}>
             <div className="banner__contents">
                 <h1 className="banner__title">
-                    {movie?.title || movie?.name || movie.originalName}
+                Cobra Kai
                 </h1>
                 <div className="banner__buttons">
                     <button className='banner__button'>Play</button>
                     <button className='banner__button'>Add to List</button>
                 </div>
                 <h1 className="banner__description">
-                    {truncate(movie?.overview, 150)}
+                    {truncate("From the mind of horror manga maestro Junji Ito comes a spine-tingling selection of some of his most bizarre, disturbing and terrifying tales.")}
                 </h1>
             </div>
             <div className="banner--fadeBottom" />
